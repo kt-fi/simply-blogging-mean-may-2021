@@ -26,18 +26,20 @@
            <div class="container">
                 <div class="row">
                     <ul class="nav justify-content-end col-lg-12">
-                        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Read Posts</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Create Post</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#read-posts">Read Posts</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#create-post">Create Post</a></li>
                     </ul>
                 </div>
            </div>
         </nav>
+
        <!-- TITLE HEADER -->
+
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h1 class="header header-main">Welcome to Runners Blog</h1>  
+                    <h1 class="header header-main text-center">Welcome to Runners Blog</h1>  
                 </div>
             </div>
         </div>
@@ -47,15 +49,19 @@
         <div class="container">
             <div class="row">
                <section class="mt-5">
-        <!-- ABOUT SECTION -->           
+
+        <!-- ABOUT SECTION -->       
+
                    <h2>About</h2>
                    <p class="col-md-12">
                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis illo quas dolor, quia sequi beatae magni quisquam laboriosam dicta pariatur blanditiis quaerat mollitia. Rerum, nulla! Nesciunt, cum? Illum, excepturi consequatur!
                     </p>
                 </section> 
+
         <!-- BLOG POSTS SECTION -->    
-                <section>
-                    <div style="background-color: gray">
+
+                <section id="read-posts">
+                    <div class="blog-post" style="background-color: gray">
                         <p>Post Date</p>
                         <h3>Post Title</h3> 
                         <br/> 
@@ -63,17 +69,28 @@
                         <br/>
                     </div>
                 </section>
-                <section>
+
+                <section class="container mt-5n new-blog-post" id="create-post">
                     <h2>Create New Post</h2>
-                    <label for="title">Post Title</label>
-                    <input type="text" name="title" id="title">
-                    <label for="mainContent">Post Content</label>
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <form onsubmit="addNewPost()">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-8 center">
+                                <label class="form-label" for="title">Post Title</label>
+                                <input class="form-control" type="text" name="title" id="title">
+                                <label class="form-label" for="postMainContent">Post Content</label>
+                                <textarea class="form-control" name="postMainContent" id="postMainContent" cols="30" rows="10"></textarea>
+                                <div class="buttons col-md-12 m-2 text-center">
+                                    <button type="submit" class="btn btn-primary col-sm-3">Post Blog</button>
+                                    <button class="btn btn-danger col-sm-3 ">Clear</button> 
+                                 </div>
+                            </div>
+                        </div>
+                    </form>
                 </section>
+
             </div> 
         </div>
     </main>
 
-    <footer>&copy; Christopher Hillman 2021</footer>
-</body>
+<footer class="container footer"><p>&copy; Chris Hillman <span id="year">2020</p></span></footer></body>
 </html>
