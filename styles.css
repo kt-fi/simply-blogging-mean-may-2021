@@ -1,12 +1,14 @@
 body{
-    background-color: black;
+    background-image: linear-gradient(rgba(241, 241, 241, 0.5), rgba(136, 136, 136, 0.5)), url('running.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 
 .center{
     margin: 0 auto;;
 }
-
 
 
 /* NAV STYLES */
@@ -25,6 +27,14 @@ nav{
     font-size: 60px;
 }
 
+
+/* ABOUT PAGE SECTION STYLES */
+
+.about{
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    font-size: large;
+}
 
 /*BLOG POST STYLES*/
 
@@ -47,3 +57,15 @@ nav{
     font-weight: 600;
 }
 
+
+
+/* FOOTER STYLES*/
+
+footer{
+    height: 80px;
+    text-align: center;
+}
+
+footer p {
+    margin: 30px;
+}
