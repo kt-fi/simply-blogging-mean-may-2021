@@ -41,7 +41,11 @@ function addNewPost(event){
     
     postId++;
 
-
+    clearInputs();
 }
 
-
+function clearInputs(){
+    document.getElementById("postTitle").value = null;
+    document.getElementById("postMainContent").value = null;
+    document.getElementById("postImage").value = null;
+}
